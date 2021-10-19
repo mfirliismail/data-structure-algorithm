@@ -8,7 +8,7 @@ const functionArr = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         data.push(arr[i])
     }
-    console.log(data)
+    console.log("push ", data)
 }
 
 functionArr([4, 3, 5, 19, 29])
@@ -27,7 +27,7 @@ let unshiftToData2 = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         data2.unshift(arr[i])
     }
-    console.log(data2)
+    console.log("unshift", data2)
 }
 
 unshiftToData2([120, 200, 400])
@@ -46,7 +46,7 @@ const reverseArr = () => {
     for (let i = arrBiasa.length - 1; i >= 0; i--) {
         reverse.push(arrBiasa[i])
     }
-    console.log(reverse)
+    console.log('reverse ', reverse)
 
 }
 reverseArr()
@@ -66,7 +66,25 @@ let spliceFunc = () => {
         spliceArr.splice(i, 1)
 
     }
-    console.log(spliceArr)
+    console.log("splice", spliceArr)
 }
 
 spliceFunc()
+
+//==================
+
+// pop an array
+
+//==================
+
+
+let popArr = [11, 23, 45, 1]
+
+let popFunc = () => {
+    for (let i = popArr.length - 1; i >= 2; i--) {
+        popArr.pop()
+    }
+    console.log('pop', popArr)
+}
+
+popFunc()
